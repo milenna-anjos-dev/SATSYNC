@@ -13,18 +13,15 @@
     --spacing-md: 20px;
     --spacing-lg: 30px;
     --color-light-green: rgb(137, 199, 161);
-
 }
 
 html {
     scroll-behavior: smooth;
     font-family: 'Barlow', sans-serif;
     cursor: pointer;
-
 }
 
-ul,
-ol {
+ul,ol {
     list-style: none;
 }
 
@@ -62,7 +59,6 @@ a:hover {
     color: var(--color-light-green);
 }
 
-
 .cta {
     height: calc(100vh - 100px);
     display: flex;
@@ -99,7 +95,6 @@ a:hover {
         linear-gradient(rgb(19, 51, 39), rgb(102, 156, 121)) padding-box,
         linear-gradient(to right, #0a0112, #61946b) border-box;
     box-shadow: 0 0 20px rgba(89, 167, 105, 0.3);
-    ;
 }
 
 .Problemas-box img {
@@ -290,28 +285,84 @@ a:hover {
     margin-bottom: 20px;
 }
 
-
 .publico-alvo-card p {
     color: rgb(16, 43, 26);
     max-width: 250px;
+    margin-top: 20px;
 }
-
-
-
 
 .Beneficios-box {
     height: var(--height-full);
-    background:
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   background:
         linear-gradient(rgb(19, 51, 39), rgb(102, 156, 121)) padding-box,
         linear-gradient(to right, #0a0112, #61946b) border-box;
     box-shadow: 0 0 20px rgba(21, 66, 31, 0.3);
 }
 
+.Beneficios-box h1 {
+    color: var(--color-light-green);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Baskervville', serif;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.beneficios-card h3 {
+    font-family: 'Baskervville', serif;
+    color: var(--color-light-green);
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.beneficios-card p {
+    color: rgb(16, 43, 26);
+    max-width: 300px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.beneficios-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 60px
+}
+
+.beneficios-card {
+    margin-bottom: 10px;
+    border: 3px solid rgb(48, 75, 58);
+    border-radius: 15px;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: .7s;
+}
+
+.beneficios-card img {
+    width: 100px;
+}
+
+.beneficios-card:hover {
+    transform: scale(1.15);
+
+}
+
 .Aplicacao-box {
     height: var(--height-full);
     background:
-        linear-gradient(rgb(102, 156, 121), rgb(19, 51, 39)) padding-box,
-        linear-gradient(to right, #61946b, #0a0112) border-box;
+        linear-gradient(rgb(90, 142, 107), rgb(19, 51, 39)) padding-box,
+        linear-gradient(to right, #0a0112, #61946b) border-box;
     box-shadow: 0 0 20px rgba(28, 87, 41, 0.3);
 
 }
