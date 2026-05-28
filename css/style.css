@@ -13,7 +13,7 @@
     --spacing-md: 20px;
     --spacing-lg: 30px;
     --color-light-green: rgb(137, 199, 161);
-    
+
 }
 
 html {
@@ -23,7 +23,8 @@ html {
 
 }
 
-ul, ol {
+ul,
+ol {
     list-style: none;
 }
 
@@ -41,7 +42,7 @@ a:hover {
 .hero {
     height: var(--height-full);
     background-image: linear-gradient(to top, rgba(2, 23, 4, 0.8), rgba(16, 71, 32, 0.4)),
-    url(../Imagens/R\ \(1\).jpg);
+        url(../Imagens/R\ \(1\).jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -79,7 +80,7 @@ a:hover {
 }
 
 .cta p {
-   color: rgb(149, 172, 158);
+    color: rgb(149, 172, 158);
 }
 
 .menu-hero-list {
@@ -97,17 +98,19 @@ a:hover {
     background:
         linear-gradient(rgb(19, 51, 39), rgb(102, 156, 121)) padding-box,
         linear-gradient(to right, #0a0112, #61946b) border-box;
-        box-shadow: 0 0 20px rgba(89, 167, 105, 0.3);;
+    box-shadow: 0 0 20px rgba(89, 167, 105, 0.3);
+    ;
 }
 
 .Problemas-box img {
-     border-radius: 30px 60px 10px;
+    border-radius: 30px 60px 10px;
 }
 
 .Problemas-box h1 {
     margin-bottom: 100px;
     font-family: 'Baskervville', serif;
     color: var(--color-light-green);
+    font-size: 40px;
 }
 
 .problemas-informação {
@@ -119,7 +122,7 @@ a:hover {
 
 .card {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     gap: 20px;
 }
 
@@ -128,9 +131,10 @@ a:hover {
     color: var(--color-light-green);
     font-weight: 500;
 }
+
 .card p {
     color: rgb(16, 43, 26);
-     max-width: 300px;
+    max-width: 300px;
 }
 
 .cards {
@@ -146,15 +150,16 @@ a:hover {
     justify-content: center;
     align-items: center;
     background:
-        linear-gradient(rgb(102,156,121), rgb(19,51,39)) padding-box,
+        linear-gradient(rgb(102, 156, 121), rgb(19, 51, 39)) padding-box,
         linear-gradient(to right, #61946b, #0a0112) border-box;
-        box-shadow: 0 0 20px rgba(89, 167, 105, 0.3);
+    box-shadow: 0 0 20px rgba(89, 167, 105, 0.3);
 }
 
 .Tecnologia-box h1 {
     margin-bottom: 100px;
     font-family: 'Baskervville', serif;
     color: var(--color-light-green);
+    font-size: 40px;
 }
 
 .tecnologias-informação {
@@ -181,7 +186,7 @@ a:hover {
     max-width: 300px;
 }
 
-.tecnologia-cards { 
+.tecnologia-cards {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -197,17 +202,17 @@ a:hover {
     background:
         linear-gradient(rgb(19, 51, 39), rgb(102, 156, 121)) padding-box,
         linear-gradient(to right, #0a0112, #61946b) border-box;
-        box-shadow: 0 0 20px rgba(21, 66, 31, 0.3);
+    box-shadow: 0 0 20px rgba(21, 66, 31, 0.3);
 }
 
 .Objetivos-box h1 {
     color: var(--color-light-green);
     font-family: 'Baskervville', serif;
     margin-bottom: 20px;
-    
+
 }
 
-.Objetivo-cards { 
+.Objetivo-cards {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -242,30 +247,71 @@ a:hover {
     transform: scale(1.10);
 }
 
-
-
-
 .Publico-alvo-box {
     height: var(--height-full);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background:
-        linear-gradient(rgb(102,156,121), rgb(19,51,39)) padding-box,
+        linear-gradient(rgb(102, 156, 121), rgb(19, 51, 39)) padding-box,
         linear-gradient(to right, #61946b, #0a0112) border-box;
-        box-shadow: 0 0 20px rgba(89, 167, 105, 0.3);
+    box-shadow: 0 0 20px rgba(89, 167, 105, 0.3);
 }
+
+.Publico-alvo-box h1 {
+    color: var(--color-light-green);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Baskervville', serif;
+    margin-bottom: 90px;
+    font-size: 40px;
+}
+
+.publico-informação {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.publico-informação img {
+    width: 800px;
+    border-radius: 10px 60px 30px;
+}
+
+.publico-alvo-card h3 {
+    font-family: 'Baskervville', serif;
+    color: var(--color-light-green);
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+
+.publico-alvo-card p {
+    color: rgb(16, 43, 26);
+    max-width: 250px;
+}
+
+
+
 
 .Beneficios-box {
     height: var(--height-full);
     background:
         linear-gradient(rgb(19, 51, 39), rgb(102, 156, 121)) padding-box,
         linear-gradient(to right, #0a0112, #61946b) border-box;
-        box-shadow: 0 0 20px rgba(21, 66, 31, 0.3);
+    box-shadow: 0 0 20px rgba(21, 66, 31, 0.3);
 }
 
 .Aplicacao-box {
     height: var(--height-full);
     background:
-        linear-gradient(rgb(102,156,121), rgb(19,51,39)) padding-box,
+        linear-gradient(rgb(102, 156, 121), rgb(19, 51, 39)) padding-box,
         linear-gradient(to right, #61946b, #0a0112) border-box;
-        box-shadow: 0 0 20px rgba(28, 87, 41, 0.3);
-   
+    box-shadow: 0 0 20px rgba(28, 87, 41, 0.3);
+
 }
