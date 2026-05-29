@@ -1,3 +1,4 @@
+/*Import de fontes do google fonts, pois a versão ttf estava muito pixelada*/
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Glory:ital,wght@0,100..800;1,100..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&display=swap');
 
@@ -36,6 +37,20 @@ a:hover {
     color: rgb(37, 84, 54);
 }
 
+footer {
+    background-color: #61946b;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(16, 43, 26);
+}
+
 .hero {
     height: var(--height-full);
     background-image: linear-gradient(to top, rgba(2, 23, 4, 0.8), rgba(16, 71, 32, 0.4)),
@@ -57,7 +72,14 @@ a:hover {
     font-weight: 700;
     font-family: 'Baskervville', serif;
     color: var(--color-light-green);
+    transition: .7s;
 }
+
+.header-hero h1:hover {
+    scale: 1.2;
+    color: rgb(62, 133, 88);
+}
+
 
 .cta {
     height: calc(100vh - 100px);
@@ -135,7 +157,7 @@ a:hover {
 .cards {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: var(--spacing-md);
 }
 
 .Tecnologia-box {
@@ -184,7 +206,7 @@ a:hover {
 .tecnologia-cards {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: var(--spacing-md);
 
 }
 
@@ -203,7 +225,7 @@ a:hover {
 .Objetivos-box h1 {
     color: var(--color-light-green);
     font-family: 'Baskervville', serif;
-    margin-bottom: 20px;
+    margin-bottom: var(--spacing-md);
 
 }
 
@@ -218,7 +240,7 @@ a:hover {
 .objetivo-card {
     width: 600px;
     padding: 35px;
-    margin-bottom: 10px;
+    margin-bottom: var(--spacing-sm);
     border: 3px solid rgb(48, 75, 58);
     border-radius: 15px;
     transition: 0.3s;
@@ -282,13 +304,13 @@ a:hover {
     font-family: 'Baskervville', serif;
     color: var(--color-light-green);
     font-weight: 500;
-    margin-bottom: 20px;
+    margin-bottom: var(--spacing-md);
 }
 
 .publico-alvo-card p {
     color: rgb(16, 43, 26);
     max-width: 250px;
-    margin-top: 20px;
+    margin-top: var(--spacing-md);
 }
 
 .Beneficios-box {
@@ -310,7 +332,7 @@ a:hover {
     justify-content: center;
     align-items: center;
     font-family: 'Baskervville', serif;
-    margin-bottom: 20px;
+    margin-bottom: var(--spacing-md);
     font-size: 40px;
 }
 
@@ -318,13 +340,13 @@ a:hover {
     font-family: 'Baskervville', serif;
     color: var(--color-light-green);
     font-weight: 500;
-    margin-bottom: 20px;
+    margin-bottom: var(--spacing-md);
 }
 
 .beneficios-card p {
     color: rgb(16, 43, 26);
     max-width: 300px;
-    margin-top: 20px;
+    margin-top: var(--spacing-md);
     text-align: center;
 }
 
@@ -337,11 +359,11 @@ a:hover {
 }
 
 .beneficios-card {
-    margin-bottom: 10px;
+    margin-bottom: var(--spacing-sm);
     border: 3px solid rgb(48, 75, 58);
     border-radius: 15px;
     padding-bottom: 40px;
-    padding-top: 20px;
+    padding-top: var(--spacing-md);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -355,14 +377,58 @@ a:hover {
 
 .beneficios-card:hover {
     transform: scale(1.15);
-
 }
 
 .Aplicacao-box {
     height: var(--height-full);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background:
         linear-gradient(rgb(90, 142, 107), rgb(19, 51, 39)) padding-box,
         linear-gradient(to right, #0a0112, #61946b) border-box;
     box-shadow: 0 0 20px rgba(28, 87, 41, 0.3);
+}
 
+.Aplicacao-box h1 {
+    color: var(--color-light-green);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Baskervville', serif;
+    margin-bottom: 100px;
+    font-size: 40px;
+}
+
+.aplicacao-informação {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.aplicacao-informação img {
+    width: 800px;
+    border-radius: 10px 60px 30px;
+}
+
+.aplicacao-card h3 {
+    font-family: 'Baskervville', serif;
+    color: var(--color-light-green);
+    font-weight: 500;
+    margin-bottom: var(--spacing-md);
+}
+
+.aplicacao-card p {
+    color: rgb(16, 43, 26);
+    max-width: 300px;
+    margin-top: var(--spacing-md);
+}
+
+.aplicacao-cards {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
 }
